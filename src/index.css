@@ -1,0 +1,122 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.user{
+  
+  border-radius: 30px;
+  width: 270px;
+  height: 300px;
+  background-color: rgb(177, 205, 238);
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 5px 10px 20px #888888;
+  transition: all 0.7s;
+}
+.user:hover{
+  box-shadow: -5px 0 20px #888888;
+}
+.user img{
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.user:hover img{
+  
+  transform:translateY(-38px) scale(1.3);
+}
+.user h3 {
+  padding: 10px;
+  margin-top: 10px;
+  
+  transition: all 0.5s;
+}
+.user:hover h3 {
+  
+  transform:translateY(-40px) scale(1.3);
+}
+.user h4{
+  margin-top: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.user:hover h4{
+  
+  transform:translateY(-40px) scale(1.3);
+}
+#btn{
+  cursor: pointer;
+  background-color: black;
+  color : lightblue;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 15px;
+  transition: all 0.5s;
+}
+.user:hover #btn{
+  transform:translateY(-40px) scale(1.3);
+
+}
+#p-user{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+.backdrop{
+  position: fixed;
+  background-color: rgba(0,0,0,0.6);
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  /* opacity: .6; */
+}
+#modal{
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+  /* با دو خط زیر یه المان میاد وسط صفحه */
+  position: fixed;
+  top: calc(50vh - 200px);
+  left: calc(50vw - 300px);
+  background-color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  /* margin: 10% auto; */
+}
+/* #modal h1{
+  border: 1px solid black;
+  width: 250px;
+  height: 100px;
+  position: fixed;
+  top: calc(50vh - 50px);
+  left: calc(50vw - 125px);
+} */
+
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+#readmore {
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  padding: 15px 30px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: rgba(26, 25, 25, 0.89);
+  /* color: rgba(219, 177, 123, 0.849); */
+  border-radius: 0 0 20px 20px;
+}
